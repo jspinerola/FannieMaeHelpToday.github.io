@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Fannie Mae Help Today
+    </title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Are you eligible for a home loan? Find out today!">
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="App.js"></script>
+
+  </head>
+  <body>
+    <div>
+      <div class="nav_bar">
+        <header>
+          <img
+            class="logo"
+            src="public/fannie-mae-logo-png.png"
+            alt="logo"
+          />
+          <nav>
+            <ul class="nav-links">
+              <li>
+                <a class="nav-link" href="https://www.fanniemae.com" target="_blank">Fannie Mae Website</a>
+              </li>
+              
+              <li>
+                <a class="nav-link" href="https://www.fanniemae.com/education" target="_blank">
+                  Education Resources
+                </a>
+              </li>
+              <li>
+                |
+              </li>
+              <li>
+                <a class="es-button" href="" target="_blank">
+                  En español
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <div class="Main">
+        <section class="title">
+          <h1>Are you Ready to Buy a Home?</h1>
+          <p>Our tool uses your financial informaiton to calculate which factors could potentially prevent you from taking out a home loan.</p>
+        </section>
+        <section class="info-boxes">
+          <div class="row">
+            <div class="con">
+              <p>Monthly Car Payment</p>
+              <input type ="number" id ="CarPayment" placeholder="USD" />
+            </div>
+            <div class="con">
+              <p>Student Loan Payment</p>
+              <input type ="number" id ="StudentLoan" placeholder="USD"/>
+            </div>
+            <div class="con">
+              <p>Credit Score</p>
+              <input type ="number" id ="CreditScore" placeholder="300-850" min = "300" max = "850" />
+            </div>
+            <div class="con">
+              <p>Gross Monthly Income</p>
+              <input type = "number" id ="GrossIncome" placeholder="USD" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="con">
+              <p>Monthly Credit Card Payment</p>
+              <input type = "number" id ="CreditPayment" placeholder="USD" />
+            </div>
+            <div class="con" >
+                <p>Home Appraisal Value</p>
+                <input type = "number" id ="HomeAppraised" placeholder="USD" />
+            </div>
+            <div class="con">
+              <p>Down Payment Amount</p>
+              <input type ="number" id ="DownPayment" placeholder="USD" />
+            </div>
+            <div class="con">
+              <p>Est. monthly mortgage payment</p>
+              <input type = "number" id ="Mortgage" placeholder="USD" />
+            </div>
+          </div>
+
+          <input class="info-button" type="button" onClick="getCreditScoreValue();" value="Check Eligibility">
+
+        </section>
+        <section class="results">
+          <div>
+            <h1>Results:</h1>
+          </div>
+
+          <div class="output-row">
+            <textarea class="result-text" id ="box1" readonly/></textarea>
+            <textarea class="result-text" id="box2" readonly/></textarea>
+            <textarea class="result-text" id ="box3" readonly/></textarea>
+          </div>
+
+          <div class="terms-info">
+            <p>DTI = Debt-to-income ratio (percentage of income going towards monthly debt). <br>FEDTI = Front-end debt income (percentage of income going towards monthly mortage). <br>LTV = Loan-to-value (is the percentage of the house appraisal you need the loan for after the down payment).</p>
+
+            <a class="info-button" href="https://www.lansingstatejournal.com/story/marketplace/real-estate/2020/08/12/loan-value-debt-income-what-do-these-terms-mean/3358196001/" target="_blank">Click Here For More Information</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

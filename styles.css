@@ -1,0 +1,215 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Source+Sans+3&display=swap');
+
+
+* {
+}
+
+.App {
+  text-align: center;
+}
+
+body {
+  background: rgb(9,98,186);
+  background: linear-gradient(0deg, rgba(9,98,186,1) 0%, rgba(54,127,200,1) 100%);
+  color: white;
+  text-align: center;
+  font-family: Roboto Slab;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+input, textarea{
+  border-radius: 0.5rem;
+  border-width: 0px;
+  width: 10rem;
+  padding: 8px 5px 8px 5px;
+
+}
+input{
+  box-shadow: 0px 0.25rem 10px rgba(0, 0, 0, 0.25);
+  display: block;
+  margin: auto;
+
+}
+.logo {
+  width: 15rem;
+  cursor: pointer;
+}
+
+li,
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  margin: 0;
+  background-color: rgb(4, 49, 77);
+  border-radius: 1rem;
+  box-shadow: 0px 0.25rem 10px rgba(0, 0, 0, 0.25);
+
+}
+
+.nav-links {
+  list-style: none;
+}
+.nav-links li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+.Main {
+  justify-content: space-between;
+  flex-direction: row;
+
+}
+.title {
+}
+
+.UserInput1 {
+  display: flex;
+  flex-direction: row;
+}
+.UserInput2 {
+  display: flex;
+  flex-direction: row;
+}
+.result-text {
+  width: 500px;
+  height: 150px
+}
+
+.output-row {
+  display: flex;
+  justify-content: center;  
+}
+
+textarea {
+  resize: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-family: Roboto Slab;
+  font-size: 24px;
+}
+.terms-info{
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom:40px
+}
+
+.info-button{
+  border-style: none;
+  text-decoration: none;
+  color: beige;
+  background-color: rgb(4, 49, 77);
+  padding: 12px;
+  border-radius: .5rem;
+  font-family: Roboto Slab;
+  cursor: pointer;
+  transition: background-color 200ms;
+  font-size: 16px;
+}
+
+.info-button{
+  border-style: none;
+  color: beige;
+  background-color: rgb(4, 49, 77);
+  padding: 12px;
+  border-radius: .5rem;
+  font-family: Roboto Slab;
+  cursor: pointer;
+  transition: background-color 200ms;
+}
+
+.info-button:hover{
+    background-color: rgb(0, 43, 71);
+}
+.info-button:active{
+    background-color: rgb(4, 49, 77);
+
+}
+
+.row {
+  display: flex;
+  margin-bottom: 40px;
+}  
+
+.row > * {
+  flex-basis: 100%;
+}
+
+.info-boxes {
+  margin-bottom: 25px;
+}
+
+.title > h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+.title > p {
+  margin-bottom: 35px;
+}
+
+.con > p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.terms-info > p {
+  margin-bottom: 35px;
+}
+
+@media only screen and (max-width: 700px) {
+  .row{
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+}
+
+.nav-link {
+  border-style: none;
+  color: white;
+  padding: 12px;
+  border-radius: .5rem;
+  font-family: Roboto Slab;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 200ms;
+}
+
+.nav-link:hover {
+
+  background-color: rgb(8, 78, 122);
+
+}
+
+.es-button {
+  border-style: none;
+  color: white;
+  padding: 12px;
+  border-radius: .5rem;
+  font-family: Roboto Slab;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+
+  transition: text-decoration 200ms;
+}
+
+.es-button:hover {
+
+  text-decoration: underline;
+
+}
